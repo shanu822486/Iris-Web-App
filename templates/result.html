@@ -1,0 +1,33 @@
+{%extends 'base.html' %}
+
+{%block head%}
+<title>Prediction</title>
+{%endblock%}
+
+
+{%block body%}
+
+	<h1>Category to which FLower belongs is:</h1>
+	{% if predicted_value == 0 %}
+		<img src="static/IrisSetosa.png" alt = 'iris-setosa' class="w3-circle">
+		<h3>Iris Setosa</h3>
+
+		
+	{% elif predicted_value == 1 %}
+		<img src="/static/IrisVersicolor.png" alt = 'iris-versicolor' class="w3-circle">
+		<h3>Iris Versicolor</h3>
+
+	{%  else %}
+		<img src="/static/Irisvirginica.jpeg" alt = 'iris-virginica' class="w3-circle">		
+		<h3>Iris Virginica</h3>
+
+	{%endif%}
+	
+	<hr>
+	<br>
+	
+	<a class = 'btn btn-primary' href =  '/home'> Home </a> 
+
+{%endblock%}
+
+

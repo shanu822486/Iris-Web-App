@@ -1,0 +1,37 @@
+{%extends 'base.html' %}
+
+{% block head %}
+
+{%endblock%}
+
+{%block body%}
+
+	<hr>
+	<h1> Iris Flower Prediction </h1>
+	<hr>
+	<h2>Enter the values</h2>
+	<form action = '/home' method = 'POST'>
+		<label for="Sepal Length">Sepal Length:</label> 
+		<input class="form-control" type="text" name = 'Sepal Length' id = 'Sepal Length' placeholder="Enter Sepal Length" aria-label="Enter Sepal Length">
+		
+		<br>
+		
+		<label for="Sepal Width">Sepal Width:</label> 
+		<input class="form-control" type="text" name = 'Sepal Width' id = 'Sepal Width' placeholder="Enter Sepal width" aria-label="Enter Sepal width">
+		
+		<br>
+		<label for="Petal Length">Petal Length:</label> 
+		<input class="form-control" type="text" name = 'Petal Length' id = 'Petal Length' placeholder="Enter petal Length" aria-label="Enter petal Length">
+		<br>
+		
+		<label for="Petal width">Petal width:</label> 
+		<input class="form-control" type="text" name = 'Petal width' id = 'Petal width' placeholder="Enter petal width" aria-label="Enter petal width">
+		<br>
+		<input type = 'submit' value = 'Predict'>
+	</form>
+	
+	
+	
+	
+
+{%endblock%}
